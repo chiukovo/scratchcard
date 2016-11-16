@@ -12,7 +12,7 @@
     <link href="css/jquery.filer.css" rel="stylesheet">
 
     <!-- Jvascript -->
-    <script src="http://code.jquery.com/jquery-3.1.0.min.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-1.11.3.js"></script>
     <script src="js/jquery.filer.min.js" type="text/javascript"></script>
     <script src="js/custom.js" type="text/javascript"></script>
 

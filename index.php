@@ -3,22 +3,29 @@
 <head>
     <title>scratchcard</title>
      <link rel="stylesheet" href="css/style.css">
+     <script src="js/jquery-1.11.3.js"></script>
+     <script>
+        $.ajax({
+            url: './php/getRankImage.php',
+            type:"post",
+
+            success: function(res){
+                $('#openImg').attr('src', 'uploads/' + res);
+            },
+
+             error:function(xhr, ajaxOptions, thrownError){
+                console.log(xhr.status);
+                console.log(thrownError);
+             }
+        });
+     </script>
 </head>
 <body>
 <div class="container" id="js-container">
-  <canvas class="canvas" id="js-canvas" width="300" height="300"></canvas>
-  <form class="form" style="visibility: hidden;">
-    <h2>'Allo, 'Allo!</h2>
-    <h3>The secret code is:</h3>
-    <h1><code>HlkafSYc</code></h1>
-    <div>
-      <input type="text" name="code" placeholder="Secret Code">
-    </div>
-    <br>
-    <div>
-      <input type="submit" value="Submit">
-    </div>
-  </form>
+    <canvas class="canvas" id="js-canvas" width="600" height="450"></canvas>
+    <form class="form" style="visibility: hidden;">
+        <img width="600px" id="openImg" src="" alt="" />
+    </form>
 </div>
 
 </body>
