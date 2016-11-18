@@ -26,9 +26,28 @@
     <form class="form" style="visibility: hidden;">
         <img width="600px" id="openImg" src="" alt="" />
     </form>
-</div>
 
+</div>
+    <button id="reset" type="button">reset</button>
 </body>
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/scratchcard.js"></script>
+    <script type="text/javascript">
+        $("#reset").click(function(){
+            $.ajax({
+                url: './php/reset.php',
+                type:"post",
+
+                success: function(){
+                    console.log('success');
+                    location.reload();
+                },
+
+                error:function(xhr, ajaxOptions, thrownError){
+                    console.log(xhr.status);
+                    console.log(thrownError);
+                }
+            });
+        });
+    </script>
 </html>

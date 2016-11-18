@@ -6,6 +6,9 @@
         $explode = explode('/', $_FILES['files']['type'][0]);
 
         $type = end($explode);
+
+        $type = ($type == 'jpeg') ? 'jpg' : $type;
+
         $saveFileName = date('Y_m_d_h_i_s') . "_" . floor(microtime() * 1000);
         $fileName = date('Y_m_d_h_i_s') . "_" . floor(microtime() * 1000) . '.' . $type;
 
