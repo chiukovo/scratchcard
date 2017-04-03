@@ -1064,7 +1064,6 @@
             removeConfirmation: true,
             canvasImage: true,
             _selectors: {
-                list: '.jFiler-items-list',
                 item: '.jFiler-item',
                 progressBar: '.bar',
                 remove: '.jFiler-item-trash-action'

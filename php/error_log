@@ -1,0 +1,47 @@
+[21-Nov-2016 19:21:52 America/Denver] PHP Warning:  mysqli::mysqli(): (42000/1044): Access denied for user 'kaopaulc_lau'@'localhost' to database 'kaopaulc_wedding' in /home1/kaopaulc/public_html/game/php/mysql_connect.php on line 9
+[21-Nov-2016 19:21:52 America/Denver] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home1/kaopaulc/public_html/game/php/getRankImage.php on line 4
+[21-Nov-2016 19:21:52 America/Denver] PHP Warning:  mysqli::mysqli(): (42000/1044): Access denied for user 'kaopaulc_lau'@'localhost' to database 'kaopaulc_wedding' in /home1/kaopaulc/public_html/game/php/mysql_connect.php on line 9
+[21-Nov-2016 19:21:52 America/Denver] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home1/kaopaulc/public_html/game/php/getBrush.php on line 4
+[21-Nov-2016 19:21:57 America/Denver] PHP Warning:  mysqli::mysqli(): (42000/1044): Access denied for user 'kaopaulc_lau'@'localhost' to database 'kaopaulc_wedding' in /home1/kaopaulc/public_html/game/php/mysql_connect.php on line 9
+[21-Nov-2016 19:21:57 America/Denver] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home1/kaopaulc/public_html/game/php/getRankImage.php on line 4
+[21-Nov-2016 19:21:57 America/Denver] PHP Warning:  mysqli::mysqli(): (42000/1044): Access denied for user 'kaopaulc_lau'@'localhost' to database 'kaopaulc_wedding' in /home1/kaopaulc/public_html/game/php/mysql_connect.php on line 9
+[21-Nov-2016 19:21:57 America/Denver] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home1/kaopaulc/public_html/game/php/getBrush.php on line 4
+[21-Nov-2016 19:22:29 America/Denver] PHP Warning:  mysqli::mysqli(): (42000/1044): Access denied for user 'kaopaulc_lau'@'localhost' to database 'kaopaulc_wedding' in /home1/kaopaulc/public_html/game/php/mysql_connect.php on line 9
+[21-Nov-2016 19:22:29 America/Denver] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home1/kaopaulc/public_html/game/php/getRankImage.php on line 4
+[21-Nov-2016 19:22:29 America/Denver] PHP Warning:  mysqli::mysqli(): (42000/1044): Access denied for user 'kaopaulc_lau'@'localhost' to database 'kaopaulc_wedding' in /home1/kaopaulc/public_html/game/php/mysql_connect.php on line 9
+[21-Nov-2016 19:22:29 America/Denver] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home1/kaopaulc/public_html/game/php/getBrush.php on line 4
+[21-Nov-2016 19:23:30 America/Denver] PHP Warning:  mysqli::mysqli(): (42000/1044): Access denied for user 'kaopaulc_lau'@'localhost' to database 'kaopaulc_wedding' in /home1/kaopaulc/public_html/game/php/mysql_connect.php on line 9
+[21-Nov-2016 19:23:30 America/Denver] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home1/kaopaulc/public_html/game/php/getRankImage.php on line 4
+[21-Nov-2016 19:23:31 America/Denver] PHP Warning:  mysqli::mysqli(): (42000/1044): Access denied for user 'kaopaulc_lau'@'localhost' to database 'kaopaulc_wedding' in /home1/kaopaulc/public_html/game/php/mysql_connect.php on line 9
+[21-Nov-2016 19:23:31 America/Denver] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home1/kaopaulc/public_html/game/php/getBrush.php on line 4
+[21-Nov-2016 19:23:33 America/Denver] PHP Warning:  mysqli::mysqli(): (42000/1044): Access denied for user 'kaopaulc_lau'@'localhost' to database 'kaopaulc_wedding' in /home1/kaopaulc/public_html/game/php/mysql_connect.php on line 9
+[21-Nov-2016 19:23:33 America/Denver] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home1/kaopaulc/public_html/game/php/getRankImage.php on line 4
+[21-Nov-2016 19:23:33 America/Denver] PHP Warning:  mysqli::mysqli(): (42000/1044): Access denied for user 'kaopaulc_lau'@'localhost' to database 'kaopaulc_wedding' in /home1/kaopaulc/public_html/game/php/mysql_connect.php on line 9
+[21-Nov-2016 19:23:33 America/Denver] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home1/kaopaulc/public_html/game/php/getBrush.php on line 4
+[21-Nov-2016 19:26:04 America/Denver] PHP Warning:  mysqli::mysqli(): (42000/1044): Access denied for user 'kaopaulc_lau'@'localhost' to database 'kaopaulc_wedding' in /home1/kaopaulc/public_html/game/php/mysql_connect.php on line 9
+[21-Nov-2016 19:26:04 America/Denver] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home1/kaopaulc/public_html/game/php/getRankImage.php on line 4
+[21-Nov-2016 19:26:04 America/Denver] PHP Warning:  mysqli::mysqli(): (42000/1044): Access denied for user 'kaopaulc_lau'@'localhost' to database 'kaopaulc_wedding' in /home1/kaopaulc/public_html/game/php/mysql_connect.php on line 9
+[21-Nov-2016 19:26:04 America/Denver] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home1/kaopaulc/public_html/game/php/getBrush.php on line 4
+[21-Nov-2016 19:27:30 America/Denver] PHP Warning:  mysqli::mysqli(): (42000/1044): Access denied for user 'kaopaulc_lau'@'localhost' to database 'kaopaulc_wedding' in /home1/kaopaulc/public_html/game/php/mysql_connect.php on line 9
+[21-Nov-2016 19:27:30 America/Denver] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home1/kaopaulc/public_html/game/php/getRankImage.php on line 4
+[21-Nov-2016 19:27:30 America/Denver] PHP Warning:  mysqli::mysqli(): (42000/1044): Access denied for user 'kaopaulc_lau'@'localhost' to database 'kaopaulc_wedding' in /home1/kaopaulc/public_html/game/php/mysql_connect.php on line 9
+[21-Nov-2016 19:27:30 America/Denver] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home1/kaopaulc/public_html/game/php/getBrush.php on line 4
+[22-Nov-2016 05:21:10 America/Denver] PHP Warning:  mysqli::mysqli(): (42000/1044): Access denied for user 'kaopaulc_lau'@'localhost' to database 'kaopaulc_wedding' in /home1/kaopaulc/public_html/game/php/mysql_connect.php on line 9
+[22-Nov-2016 05:21:10 America/Denver] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home1/kaopaulc/public_html/game/php/getRankImage.php on line 4
+[22-Nov-2016 05:21:10 America/Denver] PHP Warning:  mysqli::mysqli(): (42000/1044): Access denied for user 'kaopaulc_lau'@'localhost' to database 'kaopaulc_wedding' in /home1/kaopaulc/public_html/game/php/mysql_connect.php on line 9
+[22-Nov-2016 05:21:10 America/Denver] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home1/kaopaulc/public_html/game/php/getBrush.php on line 4
+[22-Nov-2016 20:42:03 America/Denver] PHP Parse error:  syntax error, unexpected 'success' (T_STRING), expecting ',' or ';' in /home1/kaopaulc/public_html/game/php/form_upload.php on line 38
+[07-Dec-2016 02:33:13 America/Denver] PHP Parse error:  syntax error, unexpected '"', expecting ',' or ';' in /home1/kaopaulc/public_html/game/php/form_upload.php on line 35
+[07-Dec-2016 02:34:15 America/Denver] PHP Parse error:  syntax error, unexpected '"', expecting ',' or ';' in /home1/kaopaulc/public_html/game/php/form_upload.php on line 37
+[07-Dec-2016 02:35:51 America/Denver] PHP Parse error:  syntax error, unexpected '"', expecting ',' or ';' in /home1/kaopaulc/public_html/game/php/form_upload.php on line 37
+[07-Dec-2016 02:37:09 America/Denver] PHP Parse error:  syntax error, unexpected '"', expecting ',' or ';' in /home1/kaopaulc/public_html/game/php/form_upload.php on line 37
+[07-Dec-2016 02:40:26 America/Denver] PHP Parse error:  syntax error, unexpected '"', expecting ',' or ';' in /home1/kaopaulc/public_html/game/php/form_upload.php on line 37
+[07-Dec-2016 02:41:42 America/Denver] PHP Parse error:  syntax error, unexpected '"', expecting ',' or ';' in /home1/kaopaulc/public_html/game/php/form_upload.php on line 37
+[07-Dec-2016 02:41:54 America/Denver] PHP Parse error:  syntax error, unexpected '"', expecting ',' or ';' in /home1/kaopaulc/public_html/game/php/form_upload.php on line 37
+[09-Dec-2016 00:34:39 America/Denver] PHP Warning:  fopen(uploads/584a5e8f388bb.jpeg): failed to open stream: No such file or directory in /home1/kaopaulc/public_html/game/php/imgUpload.php on line 18
+[09-Dec-2016 00:34:39 America/Denver] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home1/kaopaulc/public_html/game/php/imgUpload.php on line 19
+[09-Dec-2016 00:34:39 America/Denver] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home1/kaopaulc/public_html/game/php/imgUpload.php on line 20
+[19-Dec-2016 20:05:24 America/Denver] PHP Notice:  Undefined index: name in /home1/kaopaulc/public_html/game/php/getRankImage.php on line 11
+[19-Dec-2016 20:05:24 America/Denver] PHP Notice:  Undefined index: content in /home1/kaopaulc/public_html/game/php/getRankImage.php on line 12
+[19-Dec-2016 20:05:24 America/Denver] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home1/kaopaulc/public_html/game/php/getRankImage.php on line 13
+[19-Dec-2016 20:05:43 America/Denver] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home1/kaopaulc/public_html/game/php/getRankImage.php on line 13

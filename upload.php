@@ -1,64 +1,137 @@
-<!DOCTYPE>
-<html lang="html">
+<!DOCTYPE html>
+<html class="upload">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>jQuery Filer</title>
-
+    <meta charset="UTF-8">
+    <title>Chiuko ♥ Quni   HAPPY WEDDING</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="shortcut icon" href="image/favicon.ico?0.1">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-
-    <!-- Styles -->
-    <link href="css/jquery.filer.css" rel="stylesheet">
-
-    <!-- Jvascript -->
+    <link href='http://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <!-- Custom styles for this template -->
+    <!-- <link rel="stylesheet" href="css/jquery.filer.css"> -->
+    <link rel="stylesheet" href="css/upload.css">
+    <!-- loading -->
+    <link rel="stylesheet" href="css/loader.css">
+    <!-- Share core Javascript -->
     <script src="js/jquery-1.11.3.js"></script>
-    <script src="js/jquery.filer.min.js" type="text/javascript"></script>
-    <script src="js/custom.js" type="text/javascript"></script>
-
+    <script src="js/jquery.filer.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/exif.js"></script>
+    <script type='text/javascript' src='js/resizeExif.js?v=20161224'></script>
+    <script type='text/javascript' src='js/mobileBUGFix.mini.js'></script>
     <style>
-        body {
-            font-family: 'Roboto Condensed', sans-serif;
-            font-size: 14px;
-            line-height: 1.42857143;
-            color: #47525d;
-            background-color: #fff;
-
-            margin: 0;
-            padding: 20px;
+        input[type="file"] {
+          cursor: pointer !Important;
+          padding-left: 20px;
+          color: transparent;
         }
-
-        hr {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            border: 0;
-            border-top: 1px solid #eee;
+        input[type="file"]::-webkit-file-upload-button {
+          background: #57a29e;
+          border: 0;
+          padding: 0.5em 1.5em;
+          cursor: pointer;
+          color: #fff;
+          border-radius: .2em;
+        }
+        input[type="file"]::-ms-browse {
+          background: #57a29e;
+          border: 0;
+          padding: 0.5em 1.5em;
+          cursor: pointer;
+          color: #fff;
+          border-radius: .2em;
+        }
+        #uploadMsg {
+            position: absolute;
+            left: 200px;
+            overflow: hidden;
+            width: 150px;
+            white-space: nowrap;
         }
     </style>
 </head>
 
 <body>
-    <div id="content">
-        <form id="formPost" action="./php/form_upload.php" method="post" enctype="multipart/form-data">
-            姓名: <input type="input" name="name">
-            <hr>
-            祝福的話: <input type="input" name="content">
-            <hr>
-            照片: <input type="file" name="files[]" id="filer_input" multiple="multiple">
-            <button id="button" type=button>submit</button>
-        </form>
+    <div class="page-loading-overlay">
+       <div class="loader"></div>
     </div>
-
+    <div id="mainBody">
+        <div id="header">
+            <div class="btn-left">
+                <a href="photo.php"><img src="image/icon_gallery.svg" /></a>
+            </div>
+            <div class="btn-right">
+                <a href="#"><img src="image/icon_diamond.svg" /></a>
+            </div>
+        </div>
+        <div id="content">
+            <div class="title"><img src="image/title.svg" /></div>
+            <div class="form">
+                <form id="formPost" action="./php/form_upload.php" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <input type="input" name="name" class="form-input" placeholder="姓名">
+                    </div>
+                    <div class="form-group">
+                        <input type="input" name="content" class="form-input" placeholder="祝福話語">
+                    </div>
+                    <div class="form-group form-upload">
+                        <label class="form-label">照片上傳</label>
+                        <input type="file" accept="image/*" id="uploadImage" onchange="selectFileImage(this);" />
+                        <span id="uploadMsg"></span>
+                    </div>
+                    <input id="myImage" type="hidden" />
+                    <div class="form-btn">
+                        <button id="button" type=button>
+                            送出我的祝福
+                            <img src="image/icon_arrow.svg" />
+                        </button>
+                    </div>
+                    <input type="hidden" id="fileName" name="fileName"/>
+                </form>
+            </div>
+        </div>
+        <div class="mask"></div>
+    </div>
     <script type="text/javascript">
-    $("#button").click(function(){
-        var name = $('input[name=name]').val();
-        var file = $('#filer_input').val();
 
-        if (name != '' && file != '') {
-            $('#formPost').submit();
-        } else {
-            alert('必填欄位未輸入');
+    function getExtension(filename) {
+        var parts = filename.split('.');
+        return parts[parts.length - 1];
+    }
+
+    function isImage(filename) {
+        var ext = getExtension(filename);
+        switch (ext.toLowerCase()) {
+        case 'jpg':
+        case 'jpeg':
+        case 'png':
+            //etc
+            return true;
         }
+        return false;
+    }
+
+    $(document).ready(function() {
+        $('#uploadImage').on('change', function(element) {
+            $('.page-loading-overlay').show();
+            $('#uploadMsg').text(element.target.value.split('\\').pop());
+        });
+
+        $("#button").click(function(){
+            var name = $('input[name=name]').val();
+            var fileName = $('#fileName').val();
+
+            if (name == '') {
+                alert('姓名未輸入');
+            } else if (fileName == '') {
+                alert('圖片未上傳');
+            } else {
+                $('#formPost').submit();
+            }
+        });
     });
     </script>
 </body>

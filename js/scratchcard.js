@@ -12,7 +12,7 @@
         brush        = new Image();
 
     // Usage
-    getDataUri('images/bg.jpg', function(dataUri) {
+    getDataUri('image/indexBg.jpg?v=20161218', function(dataUri) {
         image.src = dataUri;
     });
 
@@ -111,8 +111,9 @@
     function handlePercentage(filledInPixels) {
       filledInPixels = filledInPixels || 0;
       console.log(filledInPixels + '%');
-      if (filledInPixels > 70) {
+      if (filledInPixels > 50) {
         canvas.parentNode.removeChild(canvas);
+        $('#in').show();
       }
     }
 

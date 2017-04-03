@@ -1,0 +1,122 @@
+html, body {
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+#mainBody {
+    background: image-url("bg.png") center/cover no-repeat;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.mask {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    @include background-image(linear-gradient(top,  rgba(246, 155, 50, 0.8) 0%, rgba(67, 6, 21, 0.8) 100%));
+}
+#header {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    .btn {
+        &-left, &-right {
+            padding: 1.5rem;
+            > a {
+                opacity: 0.5;
+                @include transition(all .3s ease);
+                &:focus,&:hover,&:active {
+                    opacity: 1;
+                }
+            }
+        }
+        &-left {
+            float: left;
+        }
+        &-right {
+            float: right;
+        }
+    }
+}
+#content {
+    position: relative;
+    z-index: 2;
+    .title {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        @include display-flex;
+        @include align-items(center);
+        @include justify-content(center);
+        height: 200px;
+    }
+}
+
+.form {
+    position: fixed;
+    bottom: 3rem;
+    width: 100%;
+    &-group {
+        position: relative;
+        border-bottom: 1px solid rgba(255,255,255,0.13);
+        margin-bottom: 10px;
+        margin-left: 6%;
+    }
+    &-btn {
+        text-align: center;
+        > button {
+            width: 90%;
+            height: 44px;
+            font-size: 13px;
+            text-align: left;
+            color: #fff;
+            border: 0;
+            padding: 0 1.2rem;
+            @include border-radius(30px);
+            @include background-image(linear-gradient(40deg,  rgba(245, 81, 95, 0.8) 0%, rgba(246, 155, 50, 0.8) 100%));
+            // box-shadow: 0 14px 8px -5px rgba(245,81,95, 0.5);
+            > img {
+                display: inline;
+                float: right;
+            }
+        }
+    }
+    .form {
+        &-label {
+            padding-left: 8px;
+        }
+        &-input {
+            width: 89%;
+            height: 44px;
+            font-size: 15px;
+            color: #fff;
+            line-height: 44px;
+            background-color: transparent;
+            border: 0;
+            padding-right: 10px;
+            @include input-placeholder {
+                color: #fff;
+            }
+            &:focus {
+                background-color: rgba(0, 0, 0, .5);
+            }
+        }
+        &-upload {
+            width: 100%;
+            height: 44px;
+            line-height: 44px;
+            input[type="file"]::before {
+                background-color: transparent;
+            }
+        }
+    }
+}
